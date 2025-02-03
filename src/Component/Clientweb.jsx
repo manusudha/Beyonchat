@@ -8,7 +8,7 @@ const openChat=()=>{
     setOpen(true);
 }
     return <>
-             <h1 className="bg-green-400 h-8 mt-0.5 font-bold text-white flex items-center justify-center">chatbot not working as intended ? <u className="ml-2 bg-yellow-300 rounded-xl text-black ">  Kindly share the feedback</u></h1>
+              <div className="sm:bg-green-400 h-8 sm:mt-0.5 sm:font-bold sm:text-white sm:flex sm:items-center sm:justify-center"> <h2 className="bg-green-400 rounded-full flex items-center justify-center text-white">chatbot not working as intended ?</h2> <u className="sm:ml-2 sm:bg-yellow-300 sm:rounded-xl sm:text-black font-bold"> <h2 className=" items-center rounded-full flex justify-center bg-yellow-300">Kindly share the feedback</h2> </u></div>
              <div className="font-mono">
                  <div className="mt-8 flex flex-col items-center justify-center h-full bg-white p-4">
                                 <h1 className="text-4xl font-bold bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 text-transparent bg-clip-text">
@@ -19,8 +19,20 @@ const openChat=()=>{
                                 </p>
                         </div>
                         <div className=" absolute bottom-2 right-2 bg-green-500 text-black-900 rounded-full h-16 w-16 flex items-center justify-center mb-0 mr-0 ">
-                            <div onClick={()=>openChat()}  className="cursor-pointer h-16 w-16 bg-indigo-500 rounded-full animate-pulse  ">
-                                
+                            <div onClick={()=>openChat()}  className="flex items-center justify-center cursor-pointer h-16 w-16 bg-indigo-500 rounded-full animate-pulse  ">
+                                    <svg className="w-12 h-12 " xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+                                        <g id="Bot_Assistant" data-name="Bot Assistant">
+                                            <path fill="#42a5f5" d="M24 41a1 1 0 0 0 0 2 1 1 0 0 0 0-2z" />
+                                            <path
+                                            fill="#42a5f5"
+                                            d="M33.83 36H14.17a2 2 0 0 0-2 2.17L13 48h22l.82-9.83A2 2 0 0 0 33.83 36zM24 45a3 3 0 1 1 3-3 3 3 0 0 1-3 3zM11 15v10H9a2 2 0 0 1-2-2v-6a2 2 0 0 1 2-2zM41 17v6a2 2 0 0 1-2 2h-2V15h2a2 2 0 0 1 2 2zM32 14H16a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-8a2 2 0 0 0-2-2zm-13 6a2 2 0 1 1 2-2 2 2 0 0 1-2 2zm7 4h-4a1 1 0 0 1 0-2h4a1 1 0 0 1 0 2zm3-4a2 2 0 1 1 2-2 2 2 0 0 1-2 2z"
+                                            />
+                                            <path
+                                            fill="#424242"
+                                            d="M42.19 35.47a5 5 0 0 0-3.47-4.41l-4.16-1.33A5 5 0 0 0 38 25V15a5 5 0 0 0-4-4.9V5.22a3 3 0 1 0-4.4-.44L28.23 10h-8.46L18.4 4.78a3 3 0 1 0-4.4.44v4.88a5 5 0 0 0-4 4.9v10a5 5 0 0 0 3.44 4.73l-4.17 1.33a5 5 0 0 0-3.46 4.41L5 46.93A1 1 0 0 0 6 48h5l-.16-2H7.07l.74-10.39A3 3 0 0 1 9.88 33l8.41-2.69.74 3A1 1 0 0 0 20 34h8a1 1 0 0 0 1-.76l.74-3L38.11 33a3 3 0 0 1 2.08 2.64L40.93 46h-3.76L37 48c5.46 0 5.31.11 5.72-.32s.35.21-.53-12.21z"
+                                            />
+                                        </g>
+                                        </svg>
                             </div>
                             {open && <ChatBot closeChat={closeChat}/>}
                         </div>
