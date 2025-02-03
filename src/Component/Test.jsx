@@ -10,7 +10,7 @@ export default function Test(){
     const [isConfettiActive, setIsConfettiActive] = useState(false);
     return<>
             <div className="font-mono">
-                 <h1 className="bg-green-400 h-8 mt-0.5 font-bold text-white flex items-center justify-center">chatbot not working as intended ? <u className="ml-2 bg-yellow-300 rounded-xl text-black ">  Kindly share the feedback</u></h1>
+                 <div className="sm:bg-green-400 h-8 sm:mt-0.5 sm:font-bold sm:text-white sm:flex sm:items-center sm:justify-center"> <h2 className="bg-green-400 rounded-full flex items-center justify-center text-white">chatbot not working as intended ?</h2> <u className="sm:ml-2 sm:bg-yellow-300 sm:rounded-xl sm:text-black font-bold"> <h2 className=" items-center rounded-full flex justify-center bg-yellow-300">Kindly share the feedback</h2> </u></div>
                  <div className="space-y-6 items-center justify-center mt-32">  
                        <div className="flex justify-center items-center bg-salte">
                           <button onClick={()=>navigate("/clientweb")} className="cursor-pointer relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-purple-500 to-pink-500 group-hover:from-purple-500 group-hover:to-pink-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-purple-800">

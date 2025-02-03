@@ -4,7 +4,7 @@ import{useNavigate} from "react-router"
 export default function Stepone(){
     const navigate=useNavigate();
     return <>
-                 <div className="flex justify-center items-center font-mono" >
+                 <div className=" justify-center items-center font-mono" >
                         <div className="">
                             <h2 className=" text-2xl flex justify-center items-center m-4 font-bold text-2xl text-black-900">First Step</h2  >
                             <div className="justify-center items-center space-y-6">
