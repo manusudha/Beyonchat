@@ -16,16 +16,16 @@ function App() {
   return (
     <>
       <div className="h-screen">
-        <BrowserRouter>
+        
         <Routes>
-            <Route path="/login" element={<Login/>} ></Route>  
+            <Route path="/" element={<Login/>} ></Route>  
             <Route path="/stepone" element={<Stepone/>}></Route>  
             <Route path="/Test" element={<Test/>}></Route>
             <Route path="/clientweb" element={<Clientweb/>}></Route>
-            <Route path="/integratgeweb" element={<Integrateweb/>}></Route>
+            <Route path="/integrateweb" element={<Integrateweb/>}></Route>
             <Route path="/Integration" element={<Integration/>}></Route>
         </Routes>
-        </BrowserRouter>
+        
          
           
       </div>
