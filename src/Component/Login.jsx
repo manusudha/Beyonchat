@@ -14,8 +14,8 @@ export default function Login(){
                     <div className="text-3xl decoration-black flex justify-center items-center">Wellcome  BeyondChat</div>
                         <div className="space-y-6"> 
                             <div className="flex justify-center items-center "><input placeholder=" Enter your Name" className=" text-center h-10 w-80 rounded-xl border-2 border-indigo-600  font-bold decoration-black" type="text" /></div>
-                            <div className="flex justify-center items-center "><input placeholder=" Enter your Name" className=" text-center h-10 w-80 rounded-xl border-2 border-indigo-600  font-bold decoration-black " type="text" /></div>
-                            <div className="flex justify-center items-center "><input placeholder=" Enter your Name" className=" text-center h-10 w-80 rounded-xl border-2 border-indigo-600  font-bold decoration-black  " type="text" /></div>
+                            <div className="flex justify-center items-center "><input placeholder=" Enter email address" className=" text-center h-10 w-80 rounded-xl border-2 border-indigo-600  font-bold decoration-black " type="text" /></div>
+                            <div className="flex justify-center items-center "><input placeholder=" Enter password" className=" text-center h-10 w-80 rounded-xl border-2 border-indigo-600  font-bold decoration-black  " type="text" /></div>
                             <div className="flex justify-center items-center"><button  onClick={OpenPopup} className="text-white text-xl  shadow-lg shadow-indigo-500/50 cursor-pointer font-bold bg-blue-700 border-2 border-indigo-600 rounded-xl h-10 w-24 " type="button" style={{fontFamily:"Doto,serif"}}>Sign Up</button></div>
                             {isOpen && <Verification ClosePopup={ClosePopup}/>}
                         </div>
